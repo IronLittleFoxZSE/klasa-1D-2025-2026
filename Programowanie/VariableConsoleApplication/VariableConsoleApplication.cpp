@@ -1,5 +1,18 @@
 #include <iostream>
 
+/*
+*. 
+*. Program obliczaj¹cy objêtoœæ sto¿ka.
+*. Program obliczaj¹cy pole ko³a.
+*. Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
+*. Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
+*. Program obliczaj¹cy objêtoœæ kuli o promieniu r
+*. Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+*. Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+*. Stwórz program, który pobiera od u¿ytkownika d³ugoœæ w metrach i przelicza j¹ na centymetry i milimetry, wyœwietlaj¹c wynik.
+*. Napisz program, który konwertuje wprowadzon¹ kwotê w jednej walucie na inn¹, korzystaj¹c z okreœlonego kursu wymiany.
+*/
+
 //Napisz program który wczyta liczbê od u¿ytkownika i j¹ wyœwietli na konsoli
 void task1()
 {
@@ -23,13 +36,31 @@ void task1()
 //Program obliczaj¹cy œredni¹ arytmetyczn¹ dwóch liczb.
 void task2()
 {
-    
+    int firstNumber, secondNumber;
+
+    std::cout << "Podaj pierwsz¹ liczbê:\n";
+    std::cin >> firstNumber;
+
+    std::cout << "Podaj drug¹ liczbê:\n";
+    std::cin >> secondNumber;
+
+    int avg;
+
+    avg = (firstNumber + secondNumber) / 2;
+
+    std::cout << "Wynik œredniej: " << avg << "\n";
+}
+
+//Program obliczaj¹cy pole prostok¹ta.
+void task3()
+{
+
 }
 
 
 int main()
 {
-    task2();
+    task3();
 }
 
 
@@ -43,7 +74,16 @@ typ_zmienej nazwaZmiennej;
 
 Typ zmiennej - wielkoœæ obszaru pamiêci, interpretacja ci¹gu bitów
 
-int - 4 bajtowa liczba ca³kowita ze znakiem <-2 147 483 648, 2 147 483 647>
+int - 2 bajtowa lub 4 bajtowa liczba ca³kowita ze znakiem 
+short - 2 bajtowa liczba ca³kowita ze znakiem <-32 768, 32 767>
+long - 4 bajtowa liczba ca³kowita ze znakiem <-2 147 483 648, 2 147 483 647>
+long long - 8 bajtowa liczba ze znakiem <-9 223 372 036 854 775 808, 9 223 372 036 854 775 807>
+
+unsigned - zmienna bez znaku <0, 2*max + 1>
+
+float - 4 bajtowa liczba rzeczywista, dok³adnoœæ 6-7 cyfr po przecinku
+double - 8 bajtowa liczba rzeczywista, dok³adnoœæ 15-16 cyfr po przecinku
+long double - 12 bajtowa liczba rzeczywista, dok³adnoœæ 19-20 cyfr po przecinku
 
 Nazwa zmiennej - nazwa obszaru w pamiêci, identyfikator
 Warunki niezbêdne:
