@@ -1,18 +1,35 @@
 #include <iostream>
 
 //Napisz program który wczyta liczbê od u¿ytkownika i j¹ wyœwietli na konsoli
-int main()
+void task1()
 {
     //wczytanie liczby
         //deklaracja zmiennych          1
         //pobranie liczby
             //informacja co chcemy      2
             //oczekiwanie na liczbê     3
-
     //wyœwietlenie na konsoli           4
 
     //1
-    int numberFromUser;
+    int numberFromUser; //number_from_user
+    //2
+    std::cout << "Podaj liczbê ca³kowit¹:\n";
+    //3
+    std::cin >> numberFromUser;
+    //4
+    std::cout << "Poda³eœ " << numberFromUser << "\n";
+}
+
+//Program obliczaj¹cy œredni¹ arytmetyczn¹ dwóch liczb.
+void task2()
+{
+    
+}
+
+
+int main()
+{
+    task2();
 }
 
 
