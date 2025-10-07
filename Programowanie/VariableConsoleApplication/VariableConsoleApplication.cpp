@@ -36,17 +36,16 @@ void task1()
 //Program obliczaj¹cy œredni¹ arytmetyczn¹ dwóch liczb.
 void task2()
 {
-    int firstNumber, secondNumber;
+    int firstNumberFromUser, secondNumber;
 
     std::cout << "Podaj pierwsz¹ liczbê:\n";
-    std::cin >> firstNumber;
+    std::cin >> firstNumberFromUser;
 
     std::cout << "Podaj drug¹ liczbê:\n";
     std::cin >> secondNumber;
 
     int avg;
-
-    avg = (firstNumber + secondNumber) / 2;
+    avg = (firstNumberFromUser + secondNumber) / 2;
 
     std::cout << "Wynik œredniej: " << avg << "\n";
 }
@@ -54,12 +53,13 @@ void task2()
 //Program obliczaj¹cy pole prostok¹ta.
 void task3()
 {
-
+    int sideA, lengthSideB, areaOfRectangle;
 }
 
 
 int main()
 {
+    setlocale(LC_CTYPE, "polish");
     task3();
 }
 
