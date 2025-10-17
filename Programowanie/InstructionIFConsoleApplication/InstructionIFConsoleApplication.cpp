@@ -1,5 +1,16 @@
 #include <iostream>
 
+/*
+Operatry warunkowe:
+>		- wiêkszy
+<		- mniejszy
+>=		- wiekszy b¹dŸ równy
+<=		- mniejszy b¹dŸ równy
+==		- równy
+!=		- ró¿ny
+
+*/
+
 //Napisz program, który wyœwietli informacje czy liczba jest dodatnia czy nie.
 void task1()
 {
@@ -10,13 +21,19 @@ void task1()
 	if (number > 0)
 		std::cout << "Podana liczba jest dodatnia\n";
 
+	if (number < 0)
+		std::cout << "Podana liczba jest ujemna\n";
+
+	if (number = 0)
+		std::cout << "Podana liczba nie jest dodatnia ani ujemna\n";
+
 	std::cout << "Koniec programu\n";
 }
 
 
 int main()
 {
-    setlocale(LC_CTYPE, "polish");
+	setlocale(LC_CTYPE, "polish");
 
 	task1();
 }
