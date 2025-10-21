@@ -1,6 +1,10 @@
 #include <iostream>
 
 /*
+
+DRY - don't repeat yourself
+KISS - kept it simple stiupid
+
 Operatry warunkowe:
 >		- wiêkszy
 <		- mniejszy
@@ -60,6 +64,7 @@ void task3()
 	std::cout << "Podaj liczbê ca³kowit¹:\n";
 	std::cin >> number;
 
+	//wersja 1
 	if (number >= 1)
 	{
 		if (number < 10)
@@ -71,6 +76,15 @@ void task3()
 	{
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 	}
+
+	//wersja 2
+	if (number >= 1)
+		if (number < 10)
+			std::cout << "Liczba jest w zakresie <1;10)\n";
+		else
+			std::cout << "Liczba nie jest w zakresie <1;10)\n";
+	else
+		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 }
 
 int main()
