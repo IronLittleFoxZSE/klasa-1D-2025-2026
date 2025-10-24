@@ -100,7 +100,7 @@ void task3()
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 
 	//wersja 3
-	if (number >= 1 && number < 10 )
+	if (number >= 1 && number < 10)
 		std::cout << "Liczba jest w zakresie <1;10)\n";
 	else
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
@@ -116,13 +116,31 @@ void task3()
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 	else
 		std::cout << "Liczba jest w zakresie <1;10)\n";
-		
 
+
+}
+
+//Napisz program, który wykona dzielenie dwóch liczb
+void task4()
+{
+	int dividend, divisor;
+	std::cout << "Podaj dzielnik:\n";
+	std::cin >> dividend;
+	std::cout << "Podaj dzieln¹:\n";
+	std::cin >> divisor;
+
+	if (divisor != 0)
+	{
+		int quoitent = dividend / divisor;
+		std::cout << "Wynik dzielenia " << quoitent << "\n";
+	}
+	else
+		std::cout << "Dzzielenie przez zero!!!\n";	
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task3();
+	task4();
 }
