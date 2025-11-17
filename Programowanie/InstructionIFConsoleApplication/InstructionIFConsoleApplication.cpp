@@ -29,11 +29,11 @@ a && b || c && d
 */
 
 /*
-*. Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i sprawdzi, czy s¹ one równe. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
-*. Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
+*.
+*.
+*.
+*.
+*.
 
 
 
@@ -146,12 +146,164 @@ void task4()
 		std::cout << "Wynik dzielenia " << quoitent << "\n";
 	}
 	else
-		std::cout << "Dzzielenie przez zero!!!\n";	
+		std::cout << "Dzzielenie przez zero!!!\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i sprawdzi, czy s¹ one równe. Wyœwietl odpowiedni komunikat.
+void task5()
+{
+	int firstNumber, secondNumber;
+	std::cout << "Podaj pierwsz¹ liczbê:\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj drug¹ liczbê: ";
+	std::cin >> secondNumber;
+
+	if (firstNumber == secondNumber)
+		std::cout << "Liczby s¹ równe.\n";
+	else
+		std::cout << "Liczby nie s¹ równe.\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
+void task6()
+{
+	unsigned short age;
+	std::cout << "Podaj wiek:\n";
+	std::cin >> age;
+
+	if (age >= 18)
+		std::cout << "Jesteœ pe³noletni.\n";
+	else
+		std::cout << "Jesteœ niepe³noletni.\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
+void task7()
+{
+	int number;
+	std::cout << "Podaj liczbê:\n";
+	std::cin >> number;
+
+	if (number < 0)
+	{
+		//number = number * (-1);
+		//number *= -1;
+		number = -number;
+	}
+
+	std::cout << "Twoja liczba jako dodatnia: " << number << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
+void task8()
+{
+	short year;
+	std::cout << "Podaj rok:\n";
+	std::cin >> year;
+
+	if (year % 4 == 0 && year % 100 != 0
+		|| year % 400 == 0)
+		std::cout << "Rok jest przestêpny\n";
+	else
+		std::cout << "Rok nie jest przestêpny\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi,
+// czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
+void task9()
+{
+	int number;
+	std::cout << "Podaj liczbê:\n";
+	std::cin >> number;
+
+	if (number % 3 == 0 && number % 5 == 0)
+		std::cout << "Liczba jest podzielna\n";
+}
+
+//Program sprawdzaj¹cy czy podana data jest poprawna
+void task10()
+{
+	int day, month, year;
+	std::cout << "Podaj dzieñ\n";
+	std::cin >> day;
+	std::cout << "Podaj miesi¹c\n";
+	std::cin >> month;
+	std::cout << "Podaj rok\n";
+	std::cin >> year;
+
+	if (day >= 1 && day <= 31
+		&& month >= 1 && month <= 12
+		&& year != 0
+		&& ((month == 4 || month == 6 || month == 9 || month == 11) && day != 31)
+		&& month == 2 && (day <= 28
+			|| day == 29 && (year % 4 == 0 && year % 100 != 0 || year % 400 == 0))
+		)
+	{
+		std::cout << "Data " << day << "." << month << "." << year << " jest poprawna\n";
+	}
+	else
+	{
+		std::cout << "Data nie jest poprawna";
+	}
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 
+// i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
+void task11()
+{
+	int dayOfWeek;
+	std::cout << "Podaj numer dnia tygodnia (1-7)\n";
+	std::cin >> dayOfWeek;
+
+	if (dayOfWeek == 1)
+		std::cout << "Poniedzia³ek\n";
+	else if (dayOfWeek == 2)
+		std::cout << "Wtorek\n";
+	else if (dayOfWeek == 3)
+		std::cout << "Œroda\n";
+	else if (dayOfWeek == 4)
+		std::cout << "Czwartek\n";
+	else if (dayOfWeek == 5)
+		std::cout << "Pi¹tek\n";
+	else if (dayOfWeek == 6)
+		std::cout << "Sobota\n";
+	else if (dayOfWeek == 7 || dayOfWeek == 0)
+		std::cout << "Niedziela\n";
+	else
+		std::cout << "Dzieñ niepoprawny\n";
+
+	switch (dayOfWeek)
+	{
+	case 1:
+		std::cout << "Poniedzia³ek\n";
+		break;
+	case 2:
+		std::cout << "Wtorek\n";
+		break;
+	case 3:
+		std::cout << "Œroda\n";
+		break;
+	case 4:
+		std::cout << "Czwartek\n";
+		break;
+	case 5:
+		std::cout << "Pi¹tek\n";
+		break;
+	case 6:
+		std::cout << "Sobota\n";
+		break;
+	case 0:
+	case 7:
+		std::cout << "Niedziela\n";
+		break;
+	default:
+		std::cout << "Dzieñ niepoprawny\n";
+	}
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task4();
+	task11();
 }
