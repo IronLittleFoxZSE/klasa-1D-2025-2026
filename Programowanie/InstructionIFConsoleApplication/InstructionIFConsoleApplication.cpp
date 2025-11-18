@@ -29,13 +29,22 @@ a && b || c && d
 */
 
 /*
-*.
-*.
-*.
-*.
-*.
+Napisz program, który poprosi u¿ytkownika o podanie masy cia³a (w kilogramach) i wzrostu (w metrach).
+Na  podstawie tych danych oblicz wskaŸnik BMI (Body Mass Index) i wyœwietl odpowiedni komunikat informuj¹cy o stanie zdrowia.
+poni¿ej 16 - wyg³odzenie
+16 - 16.99 - wychudzenie
+17 - 18.49 - niedowagê
+18.5 - 24.99 - wagê prawid³ow¹
+25.0 - 29.9 - nadwagê
+30.0 - 34.99 - I stopieñ oty³oœci
+35.0 - 39.99 - II stopieñ oty³oœci
+powy¿ej 40.0 - oty³oœæ skrajn¹
 
+Wzór:
 
+BMI = masa/wysokoœæ^2
+
+*. Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
 
 */
 
@@ -301,9 +310,95 @@ void task11()
 	}
 }
 
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru jednoelementowego.
+void task12()
+{
+	int firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+
+	int max;
+
+	max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru dwuelementowego.
+void task13()
+{
+	int firstNumber, secondNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> secondNumber;
+
+	int max;
+
+	if (secondNumber > firstNumber)
+		max = secondNumber;
+	else
+		max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru trójelementowego.
+void task14()
+{
+	int firstNumber, secondNumber, thirdNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> secondNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> thirdNumber;
+
+	int max;
+
+	if (thirdNumber > secondNumber && thirdNumber > firstNumber)
+		max = thirdNumber;
+	else if (secondNumber > firstNumber)
+		max = secondNumber;
+	else
+		max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru czteroelementowego.
+void task15()
+{
+	int firstNumber, secondNumber, thirdNumber, fourthNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> secondNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> thirdNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> fourthNumber;
+
+	int max;
+
+	if (fourthNumber > thirdNumber
+		&& fourthNumber > secondNumber
+		&& fourthNumber > firstNumber)
+		max = fourthNumber;
+	else if (thirdNumber > secondNumber 
+		&& thirdNumber > firstNumber)
+		max = thirdNumber;
+	else if (secondNumber > firstNumber)
+		max = secondNumber;
+	else
+		max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task11();
+	task13();
 }
