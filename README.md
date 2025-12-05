@@ -3,6 +3,10 @@
 Adres:
 lukasz.felisek@ezse.pl
 
+Poprawa sprawdzianu:
+
+https://forms.office.com/e/SXGXhexp1N
+
 
 Komputery 1, 3, 5, 7, 9, 11, 13, 15, 17
 
