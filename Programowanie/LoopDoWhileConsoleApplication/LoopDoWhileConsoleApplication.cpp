@@ -10,7 +10,6 @@ void task1()
 	/*
 	std::cout << "Podaj dodatni¹ liczbê:\n";
 	std::cin >> number;
-
 	if (number < 0)
 	{
 		std::cout << "Podaj dodatni¹ liczbê:\n";
@@ -93,8 +92,68 @@ void task2()
 	std::cout << "Gratulacje!!!\nZgad³eœ liczbê\n";
 }
 
+//Napisz program wyœwietlaj¹cy liczby ca³kowite z przedzia³u <1,x>.
+//Gdzie x podaje u¿ytkownik.
+void task3()
+{
+	//std::cout << "1, 2, 3, 4, 5, 6\n";
+	unsigned long long upperRange;
+	std::cout << "Podaj górny zakres wiêkszy b¹dŸ równy 1\n";
+	std::cin >> upperRange;
+/*
+	std::cout << "1, ";
+	if (upperRange > 1)
+	{
+		std::cout << "2, ";
+		if (upperRange > 2)
+		{
+			std::cout << "3, ";
+			if (upperRange > 3)
+			{
+				std::cout << "4, ";
+				//...
+			}
+		}
+	}
+	std::cout << "\n";
+	*/
+
+	unsigned long long currentNumber = 0;
+	do
+	{
+		//currentNumber = currentNumber + 1;
+		//currentNumber += 1;
+		//currentNumber++;
+		++currentNumber;
+		std::cout << currentNumber <<", ";
+	} while (upperRange > currentNumber);
+
+	std::cout << "\n";
+}
+
+//Napisz program, który policzy sumê cyfr 
+// podanej przez u¿ytkownika liczby.
+void task4()
+{
+	int number;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> number;
+
+	int sum = 0;
+
+	do
+	{
+		int digit = number % 10;
+		sum = sum + digit;
+		number = number / 10;
+	} while (number != 0);
+
+	std::cout << "Suma cyfr: " << sum << "\n";
+
+
+}
 
 int main()
 {
-	task2();
+	task4();
 }
