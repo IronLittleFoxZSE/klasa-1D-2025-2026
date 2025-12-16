@@ -2,6 +2,15 @@
 
 #include <iostream>
 
+/*
+* Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero. Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
+* Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej. Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr.
+* Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”) i koñczy z komunikatem „Start!”.
+* Program wczytuje liczbê n i oblicza 2^n w pêtli. Pyta, czy u¿ytkownik chce obliczyæ kolejn¹ potêgê.
+* Program wczytuje liczby i znajduje najwiêksz¹ z nich. Koñczy, gdy u¿ytkownik poda 0.
+* 
+*/
+
 //Napisz program, który ma pobraæ od u¿ytkownika liczbê dodatni¹. 
 //Zabezpiecz program przed pobieraniem liczb ujemnych.
 void task1()
