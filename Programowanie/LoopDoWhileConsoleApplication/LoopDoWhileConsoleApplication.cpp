@@ -3,7 +3,7 @@
 #include <iostream>
 
 /*
-* Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero. Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
+* 
 * Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej. Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr.
 * Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”) i koñczy z komunikatem „Start!”.
 * Program wczytuje liczbê n i oblicza 2^n w pêtli. Pyta, czy u¿ytkownik chce obliczyæ kolejn¹ potêgê.
@@ -158,11 +158,29 @@ void task4()
 	} while (number != 0);
 
 	std::cout << "Suma cyfr: " << sum << "\n";
+}
 
+//Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero.
+// Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
+void task5()
+{
+	int number;
+	int sum = 0;
+	int count = 0;
+	do
+	{
+		std::cout << "Podaj liczbê:\n";
+		std::cin >> number;
+		sum = sum + number;
+		count++;
+	} while (number != 0);
 
+	std::cout << "Suma wszystkich liczb: " << sum << "\n";
+	std::cout << "Œrednia arytmetyczna wszystkich liczb: " << sum / count << "\n";
 }
 
 int main()
 {
-	task4();
+	setlocale(LC_CTYPE, "polish");
+	task5();
 }
