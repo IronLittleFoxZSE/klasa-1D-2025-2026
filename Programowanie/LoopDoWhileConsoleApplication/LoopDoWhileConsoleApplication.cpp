@@ -1,11 +1,11 @@
 // LoopDoWhileConsoleApplication.cpp 
 
 #include <iostream>
-
+#include<windows.h>
 /*
 * 
-* Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej. Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr.
-* Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”) i koñczy z komunikatem „Start!”.
+* 
+* 
 * Program wczytuje liczbê n i oblicza 2^n w pêtli. Pyta, czy u¿ytkownik chce obliczyæ kolejn¹ potêgê.
 * Program wczytuje liczby i znajduje najwiêksz¹ z nich. Koñczy, gdy u¿ytkownik poda 0.
 * 
@@ -179,8 +179,69 @@ void task5()
 	std::cout << "Œrednia arytmetyczna wszystkich liczb: " << sum / count << "\n";
 }
 
+//Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej. 
+// Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr oraz sumê cyfr.
+void task6()
+{
+	int number;
+	std::cout << "Podaj liczbê:\n";
+	std::cin >> number;
+
+	int digit;
+	int count = 0;
+	int sum = 0;
+	std::cout << "Kolejne cyfry:\n";
+	do
+	{
+		//bierzemy kolejn¹ cyfrê
+		digit = number % 10;
+		//wyœwietlamy t¹ cyfrê
+		std::cout << digit << "\n";
+
+		number = number / 10;
+
+		count++;
+		sum = sum + digit;
+	} while (/*s¹ jeszcze cyfry w liczbie*/ number != 0);
+
+	std::cout << "Iloœæ cyfr: " << count << "\n";
+	std::cout << "Suma wszystkich cyfr: " << sum << "\n";
+}
+
+/*
+Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”) 
+i koñczy z komunikatem „Stop!”.
+  #include<windows.h>
+  Sleep(milliseconds);
+  1000 milisekund = 1 sekunda
+*/
+void task7()
+{
+	int number;
+	do
+	{
+		std::cout << "Podaj liczbê:\n";
+		std::cin >> number;
+	} while (number < 0);
+
+	if (number >= 0)
+	{
+		std::cout << "Start za ";
+
+		do
+		{
+			std::cout << number << ".. ";
+			Sleep(1000);
+			number--;
+		} while (number >= 0);
+		std::cout << "Stop\n";
+	}
+	else
+		std::cout << "Poda³eœ liczbê ujemn¹\n";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task5();
+	task7();
 }
