@@ -8,8 +8,8 @@ Poprawa sprawdzianu:
 
 Komputery 1, 3, 5, 7, 9, 11, 13, 15, 17
 
-https://forms.office.com/e/HFsBq1ys4k
+https://forms.office.com/Pages/ResponsePage.aspx?id=q5dZzso8u0664mriDdZ8JynqXjwolORNsBBVvpU1WY5UOTkzUFZMOENDSjJTQkxEWjk0Nk1NT0EzTCQlQCNjPTEu
 
 Komputery 2, ,4, 6, 8, 10, 12, 14, 16
 
-https://forms.office.com/e/iW5G5tTsD9
+https://forms.office.com/Pages/ResponsePage.aspx?id=q5dZzso8u0664mriDdZ8JynqXjwolORNsBBVvpU1WY5UOTkzUFZMOENDSjJTQkxEWjk0Nk1NT0EzTCQlQCNjPTEu
