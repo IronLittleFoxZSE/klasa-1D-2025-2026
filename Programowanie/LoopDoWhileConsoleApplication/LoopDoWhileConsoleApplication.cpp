@@ -3,12 +3,12 @@
 #include <iostream>
 #include<windows.h>
 /*
-* 
-* 
-* 
+*
+*
+*
 * Program wczytuje liczbê n i oblicza 2^n w pêtli. Pyta, czy u¿ytkownik chce obliczyæ kolejn¹ potêgê.
 * Program wczytuje liczby i znajduje najwiêksz¹ z nich. Koñczy, gdy u¿ytkownik poda 0.
-* 
+*
 */
 
 //Napisz program, który ma pobraæ od u¿ytkownika liczbê dodatni¹. 
@@ -59,7 +59,7 @@ void task2()
 
 	srand(time(NULL));
 
-	std::cout << "Rand() zwraca wartoœci z przedzi¹³u <0;"<< RAND_MAX << ">\n";
+	std::cout << "Rand() zwraca wartoœci z przedzi¹³u <0;" << RAND_MAX << ">\n";
 
 	//LOWER_RANGE = 5; //b³êna instrukcja
 	//<9; 50>
@@ -109,23 +109,23 @@ void task3()
 	unsigned long long upperRange;
 	std::cout << "Podaj górny zakres wiêkszy b¹dŸ równy 1\n";
 	std::cin >> upperRange;
-/*
-	std::cout << "1, ";
-	if (upperRange > 1)
-	{
-		std::cout << "2, ";
-		if (upperRange > 2)
+	/*
+		std::cout << "1, ";
+		if (upperRange > 1)
 		{
-			std::cout << "3, ";
-			if (upperRange > 3)
+			std::cout << "2, ";
+			if (upperRange > 2)
 			{
-				std::cout << "4, ";
-				//...
+				std::cout << "3, ";
+				if (upperRange > 3)
+				{
+					std::cout << "4, ";
+					//...
+				}
 			}
 		}
-	}
-	std::cout << "\n";
-	*/
+		std::cout << "\n";
+		*/
 
 	unsigned long long currentNumber = 0;
 	do
@@ -134,7 +134,7 @@ void task3()
 		//currentNumber += 1;
 		//currentNumber++;
 		++currentNumber;
-		std::cout << currentNumber <<", ";
+		std::cout << currentNumber << ", ";
 	} while (upperRange > currentNumber);
 
 	std::cout << "\n";
@@ -209,7 +209,7 @@ void task6()
 }
 
 /*
-Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”) 
+Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”)
 i koñczy z komunikatem „Stop!”.
   #include<windows.h>
   Sleep(milliseconds);
@@ -243,5 +243,5 @@ void task7()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task7();
+	task8();
 }
