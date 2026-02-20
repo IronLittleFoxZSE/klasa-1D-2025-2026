@@ -5,13 +5,11 @@ lukasz.felisek@ezse.pl
 
 Poprawa sprawdzianu:
 
-https://forms.office.com/e/SXGXhexp1N
-
 
 Komputery 1, 3, 5, 7, 9, 11, 13, 15, 17
 
-https://forms.office.com/e/pYviEZcqY7
+https://forms.office.com/Pages/ResponsePage.aspx?id=q5dZzso8u0664mriDdZ8JynqXjwolORNsBBVvpU1WY5UOTkzUFZMOENDSjJTQkxEWjk0Nk1NT0EzTCQlQCNjPTEu
 
 Komputery 2, ,4, 6, 8, 10, 12, 14, 16
 
-https://forms.office.com/e/hu3mB3AuPg
+https://forms.office.com/Pages/ResponsePage.aspx?id=q5dZzso8u0664mriDdZ8JynqXjwolORNsBBVvpU1WY5UOTkzUFZMOENDSjJTQkxEWjk0Nk1NT0EzTCQlQCNjPTEu
