@@ -94,7 +94,6 @@ void task3()
 		std::cout << "Hello world\n";
 		i++;
 	}
-
 }
 
 //Napisz program, który wyœwietli 
@@ -158,8 +157,22 @@ void task5()
 	}
 }
 
+//Napisz program, który wyœwietli "Hello world" 
+// tyle razy ile chce u¿ytkownik
+void task6()
+{
+	int howManyTimes;
+	std::cout << "Podaj ile razy wyœwietliæ\n";
+	std::cin >> howManyTimes;
+
+	for (int i = 0; i < howManyTimes; i++ )
+	{
+		std::cout << "Hello world\n";
+	}
+}
+
 
 int main()
 {
-	task5();
+	task6();
 }
