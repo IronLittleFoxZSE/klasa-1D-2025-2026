@@ -56,8 +56,53 @@ void task3()
 	std::cout << "Suma: " << sum << "\n";
 }
 
+//Program obliczaj¹cy n!.
+void task8()
+{
+	int number;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> number;
+
+	long long factorial = 1;
+
+	for (int i = 2; i <= number; i++)
+	{
+		factorial = factorial * i;
+	}
+
+	//factorial = 1;
+	/*
+	int i = 2;
+	while(i <= number)
+	{
+		factorial = factorial * i;
+		i++;
+	}
+	*/
+
+	std::cout << number << "! = " << factorial << "\n";
+}
+
+//Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+void task9()
+{
+	int f2 = 0;
+	int f1 = 1;
+	int f;
+
+	std::cout << f2 << ", " << f1 << ", ";
+
+	for (int i = 3; i <= 20; i++)
+	{
+		f = f1 + f2;
+		std::cout << f << ", ";
+		f2 = f1;
+		f1 = f;
+	}
+}
+
 
 int main()
 {
-	task2();
+	task9();
 }
