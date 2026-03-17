@@ -2,6 +2,20 @@
 
 #include <iostream>
 
+/*
+* Wczytaj s³owo i wypisz pierwsz¹ oraz ostatni¹ literê.
+* U¿ytkownik podaje tekst, a program zamienia wszystkie litery na wielkie.
+* Napisz program, który wypisuje tekst od koñca.
+* Zamieñ wszystkie cyfry na znak „*”. Przyk³ad: „abc123” ? „abc***”.
+* Napisz program, który bêdzie prosi³ o has³o. Nie przepuœci dalej dopóki nie zostanie ono podane prawid³owo.
+* Napisz program, który pobiera od u¿ytkownika ci¹g znaków i wyœwietla liczbê samog³osek i spó³g³osek w tym ci¹gu.
+* 
+* 
+* Program wyci¹gaj¹cy informacje z numeru PESEL
+* Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
+
+*/
+
 //Napisz program który pobierze znak od u¿ytkownika i wyœwieli go.
 void task1()
 {
