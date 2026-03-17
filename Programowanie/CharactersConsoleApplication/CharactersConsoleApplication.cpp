@@ -78,19 +78,52 @@ void task5()
 	std::cin >> textFromUser;
 
 	/*
-	textFromUser = "abcdgt";
+	textFromUser = "abyrcdgt";
 	std::cout << "Pierwszy znak to "<< textFromUser[0] << "\n";
 	textFromUser[1] = 'x';
 	std::cout << textFromUser << "\n";
 	std::cout << "Iloœæ znaków "<< textFromUser.length() << "\n";
 	*/
+	
+	int counter = 0;
+	for (int i = 0; i < textFromUser.length(); i++)
+	{
+		if (textFromUser[i] == 'a')
+			counter++;
+	}
 
+	std::cout << "Ma³ych liter 'a' jest " << counter << "\n";
+}
 
+//Napisz program który wygeneruje has³o.
+void task6()
+{
+	std::string passowrd = "";
+	int passordLength;
+
+	const int LOWER_RANGE_LENGTH = 4;
+	const int UPPER_RANGE_LENGTH = 12;
+
+	srand(time(NULL));
+	passordLength = rand() % (UPPER_RANGE_LENGTH - LOWER_RANGE_LENGTH + 1) + LOWER_RANGE_LENGTH;
+
+	for (int i = 0; i < passordLength; i++)
+	{
+		char character;
+		character = rand() % ('z' - 'a' + 1) + 'a';
+
+		passowrd = character + passowrd;
+	}
+
+	std::cout << "Wygenerowane has³o " << passowrd << "\n";
+
+	passowrd = "ola";
+	std::cout << passowrd[3000];
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task5();
+	task6();
 }
