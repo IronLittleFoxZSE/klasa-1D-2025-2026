@@ -24,6 +24,16 @@ void task1()
 	std::cout << "Podaj ile razy wyœwietliæ\n";
 	std::cin >> howManyTimes;
 
+	/*
+	int i = 0;
+	while (i < howManyTimes)
+	{
+		std::cout << "Hello world\n";
+
+		i++;
+	}
+	*/
+
 	for (int i = 0; i < howManyTimes; i++)
 	{
 		std::cout << "Hello world\n";
@@ -57,6 +67,11 @@ void task3()
 }
 
 //Program obliczaj¹cy n!.
+/*
+5! = 1 * 2 * 3 * 4 * 5
+4! = 1 * 2 * 3 * 4
+n! = 1 * 2 * 3 * .... * (n-1) * n
+*/
 void task8()
 {
 	int number;
@@ -104,5 +119,5 @@ void task9()
 
 int main()
 {
-	task9();
+	task2();
 }

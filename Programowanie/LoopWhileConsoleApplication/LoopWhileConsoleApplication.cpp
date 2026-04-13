@@ -10,7 +10,7 @@ void task1()
 	std::cout << "Podaj liczbê\n";
 	std::cin >> number;
 
-	int sum = 0;
+	int sum = 5;
 
 	/*
 	if (number != 0)
@@ -88,8 +88,54 @@ void task3()
 	std::cout << "Podaj ile razy wyœwietliæ\n";
 	std::cin >> howManyTimes;
 
-	int i = 0;
-	while(i < howManyTimes)
+	/*
+	if (howManyTimes >= 1)
+	{
+		std::cout << "Hello world\n";
+		if (howManyTimes >= 2)
+		{
+			std::cout << "Hello world\n";
+			if (howManyTimes >= 3)
+			{
+				std::cout << "Hello world\n";
+				if (howManyTimes >= 4)
+				{
+					std::cout << "Hello world\n";
+					//...
+				}
+			}
+		}
+	}
+	*/
+
+	/*
+	int i = 1;
+
+	if (howManyTimes >= i)
+	{
+		std::cout << "Hello world\n";
+		i++;
+		if (howManyTimes >= i)
+		{
+			std::cout << "Hello world\n";
+			i++;
+			if (howManyTimes >= i)
+			{
+				std::cout << "Hello world\n";
+				i++;
+				if (howManyTimes >= i)
+				{
+					std::cout << "Hello world\n";
+					i++;
+					//...
+				}
+			}
+		}
+	}
+	*/
+
+	int i = 1;
+	while (howManyTimes >= i)
 	{
 		std::cout << "Hello world\n";
 		i++;
@@ -104,10 +150,47 @@ void task4()
 	std::cout << "Podaj górn¹ granicê do wyœwietlenia\n";
 	std::cin >> upperRange;
 
-	int i = 0;
-	while (i <= upperRange)
+
+	//if (upperRange >= 2)
+	//{
+	//	std::cout << "2, ";
+	//	if (upperRange >= 4)
+	//	{
+	//		std::cout << "4, ";
+	//		if (upperRange >= 6)
+	//		{
+	//			std::cout << "6, ";
+	//			//..
+	//		}
+	//	}
+	//}
+
+
+	//int i = 2;
+
+	//if (upperRange >= i)
+	//{
+	//	std::cout << i << ", ";
+	//	i = i + 2;
+	//	if (upperRange >= i)
+	//	{
+	//		std::cout << i << ", ";
+	//		i = i + 2;
+	//		if (upperRange >= i)
+	//		{
+	//			std::cout << i << ", ";
+	//			i = i + 2;
+	//			//..
+	//		}
+	//	}
+	//}
+
+
+	int i = 2;
+
+	while (upperRange >= i)
 	{
-		std::cout << i << "\n";
+		std::cout << i << ", ";
 		i = i + 2;
 	}
 }
@@ -157,22 +240,17 @@ void task5()
 	}
 }
 
-//Napisz program, który wyœwietli "Hello world" 
-// tyle razy ile chce u¿ytkownik
-void task6()
-{
-	int howManyTimes;
-	std::cout << "Podaj ile razy wyœwietliæ\n";
-	std::cin >> howManyTimes;
 
-	for (int i = 0; i < howManyTimes; i++ )
-	{
-		std::cout << "Hello world\n";
-	}
+//Napisz program kóry obliczy podstawa^wyk³adnik. Obie wartoœci wczytaj od u¿ytkownika
+void task7()
+{
+	//2^5 = 2*2*2*2*2
+	//7^8 = 7*7*7*7*7*7*7*7
+	//unsigned long long result;
 }
 
 
 int main()
 {
-	task6();
+	task7();
 }
