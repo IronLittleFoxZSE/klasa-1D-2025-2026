@@ -10,7 +10,7 @@ YAGNI - you aren't gonna need it - nie potrzebujesz tego
 
 //Napisz program, który wczyta np. 5 liczb 
 //a nastêpnie wyœwietli je w odwrotnej kolejnoœci.
-void task21()
+void task1()
 {
 	/*
 	int number0, number1, number2, number3, number4 ;
@@ -81,8 +81,35 @@ void task21()
 
 }
 
+//Napisz program, który uzupe³ni tablicê liczbami losowymi a nastêpnie znajdzie minimum oraz maksimum.
+void task2()
+{
+	const short LOWER_RANGE = 0;
+	const short UPPER_RANGE = 70;
+
+	const unsigned short ARRAY_SIZE = 10;
+	int numbers[ARRAY_SIZE];
+
+	srand(time(0));
+
+	std::cout << "wylosowane liczby:\n";
+	for (int i = 0; i < ARRAY_SIZE; i++)
+	{
+		numbers[i] = rand() % (UPPER_RANGE - LOWER_RANGE + 1) + LOWER_RANGE;
+		std::cout << numbers[i] << ", ";
+	}
+
+	int max = numbers[0];
+
+	for (int i = 1; i < ARRAY_SIZE; i++)
+		if (numbers[i] > max)
+			max = numbers[i];
+
+	std::cout << "Max to: " << max << "\n";
+}
+
 int main()
 {
-    
+	task2();
 }
 
