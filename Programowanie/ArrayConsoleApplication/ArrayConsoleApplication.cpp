@@ -84,10 +84,10 @@ void task1()
 //Napisz program, który uzupe³ni tablicê liczbami losowymi a nastêpnie znajdzie minimum oraz maksimum.
 void task2()
 {
-	const short LOWER_RANGE = 0;
-	const short UPPER_RANGE = 70;
+	const short LOWER_RANGE = -40;
+	const short UPPER_RANGE = -10;
 
-	const unsigned short ARRAY_SIZE = 10;
+	const unsigned short ARRAY_SIZE = 100;
 	int numbers[ARRAY_SIZE];
 
 	srand(time(0));
@@ -106,10 +106,48 @@ void task2()
 			max = numbers[i];
 
 	std::cout << "Max to: " << max << "\n";
+
+	int min = numbers[0];
+
+	for (int i = 1; i < ARRAY_SIZE; i++)
+		if (numbers[i] < min)
+			min = numbers[i];
+
+	std::cout << "Min to: " << min << "\n";
+}
+
+//Napisz program obliczaj¹cy œredni¹ arytmetyczn¹ elementów w tablicy liczb ca³kowitych.
+void task3()
+{
+	// <LOWER_RANGE; UPPER_RANGE> przy za³o¿eniu, ¿e LOWER_RANGE <= UPPER_RANGE
+	const unsigned short LOWER_RANGE = 5;
+	const unsigned short UPPER_RANGE = 7;
+
+	const unsigned short ARRAY_SIZE = 3;
+	int numbers[ARRAY_SIZE];
+
+	srand(time(0));
+
+	std::cout << "wylosowane liczby:\n";
+	for (int i = 0; i < ARRAY_SIZE; i++)
+	{
+		numbers[i] = rand() % (UPPER_RANGE - LOWER_RANGE + 1) + LOWER_RANGE;
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << "\n";
+	//----------------------------------------------------------------------------
+
+	int sum = numbers[0];
+	for (int i = 1; i < ARRAY_SIZE; i++)
+		sum = sum + numbers[i];
+
+	double avg = sum * 1.0 / ARRAY_SIZE;
+
+	std::cout << "Œrednia wynosi: " << avg << "\n";
 }
 
 int main()
 {
-	task2();
+	task3();
 }
 
