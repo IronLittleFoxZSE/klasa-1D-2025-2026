@@ -3,6 +3,20 @@
 #include <iostream>
 
 /*
+Zadania:
+
+* Utwórz tablicê zawieraj¹c¹ 5 liczb ca³kowitych podanych przez u¿ytkownika i wypisz wszystkie jej elementy.
+* Wczytaj do tablicy 10 liczb, a nastêpnie wypisz tylko te, które s¹ wiêksze od zera.
+* W tablicy znajduj¹ siê oceny ucznia. Oblicz œredni¹ arytmetyczn¹ ocen.
+* Dana jest tablica 10 liczb. Policz, ile elementów jest parzystych.
+* Wczytaj do tablicy 5 liczb i wypisz je w odwrotnej kolejnoœci.
+* Dana jest tablica liczb ca³kowitych. SprawdŸ, czy w tablicy znajduje siê liczba podana przez u¿ytkownika.
+* W tablicy zapisano wiek 7 osób. Policz, ile osób jest pe³noletnich.
+* Dana jest tablica 5 liczb. Oblicz ró¿nicê miêdzy najwiêkszym a najmniejszym elementem.
+
+*/
+
+/*
 DRY - don't repeat yourself - nie powtarzaj siê
 KISS - Keept it simple, stupid - trzymaj prostotê g³upcze
 YAGNI - you aren't gonna need it - nie potrzebujesz tego
@@ -146,8 +160,32 @@ void task3()
 	std::cout << "Œrednia wynosi: " << avg << "\n";
 }
 
+//Napisz program, który wczyta numer dnia tygodania w nastêpnie wyœwietli nazwê tego dnia lub komunikat b³edu.
+void task4()
+{
+	short numberOfWeek = 5;
+	std::cout << "Podaj numer dnia tygodnia\n";
+	std::cin >> numberOfWeek;
+
+	/*
+	std::string dayNames[8];
+	dayNames[0] = "";
+	dayNames[1] = "Poniedzia³ek";
+	dayNames[2] = "Wtorek";
+	//..
+	dayNames[7] = "Niedziela";
+	*/
+
+	std::string dayNames[] = {"", "Poniedzia³ek", "Wtorek", "Œroda", "Czwartek", "Pi¹tek", "Sobota", "Niedziela" };
+
+	if (numberOfWeek > 0 && numberOfWeek < 8)
+		std::cout << "Ten dzieñ to " << dayNames[numberOfWeek] << "\n";
+	else
+		std::cout << "Niepoprawny dzieñ\n";
+}
+
 int main()
 {
-	task3();
+	task4();
 }
 

@@ -2,7 +2,7 @@
 #include <iostream>
 
 /*
-* Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+* 
 
 * Napisz program, który wypisze liczby od 10 do 1 w odwrotnej kolejnoœci.
 
@@ -117,7 +117,13 @@ void task9()
 }
 
 
+//Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+void task10()
+{
+
+}
+
 int main()
 {
-	task2();
+	task10();
 }
